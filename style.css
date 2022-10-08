@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Poppins", serif;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;  
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 10vh;
+    align-items: center;
+    padding: 0 5%;
+}
+.button-small {
+    border: none;
+    border-radius: 12px;
+    background-color: #a711b1;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 8px 20px;
+    font-family: "Montserrat";
+}
+.navbar div img {
+    padding-right: 60px;
+    width: 50%;
+}
+
+.line {
+    height:70%;
+    width: 1px;
+    background-color: #ffffff;
+
+}
+.grow-list {
+    margin-left: 40px;
+}
+ul.list {
+    display: flex;
+    list-style-type: none;
+    font-family: "Montserrat";
+    margin-right: 25vw;
+}
+li.list-item {
+    margin-right: 50px;
+    position: relative;
+    font-size: 14px;
+}
+li:first-child::after {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 2px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+    top: 6px;
+    right: -10px;
+}
+li:first-child::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 2px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    top: 6px;
+    right: -14px;
+}
+
+
+
+.hero {
+    height: 90vh;
+    background-image: url("./assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.hero .hero-heading {
+    position: relative;
+    font-size: 4rem;
+    max-width: 50vw;
+    top: 100px;
+    font-weight: 600;
+}
+.hero .hero-description {
+    position: relative;
+    font-weight: 500;
+    top:15vh;
+    font-size: 20px;
+    color: #ffffff;
+}
+.hero .button-large {
+    position: relative;
+    top: 20vh;
+    background-color: #a214ac;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-family: "Montserrat";
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
